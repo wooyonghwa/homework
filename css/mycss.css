@@ -1,0 +1,32 @@
+.wrap{
+    border: 3px solid black;
+    padding:50px;
+    /* width: 1400px; */
+    margin:30px;
+}
+.wrap img{
+    border : 1px solid black;
+    width: 100%;
+    /* width: 1094px; */
+    height:400px;
+}
+body{
+    font-family: 'Nanum Pen Script', cursive;
+}
+.product_ds{
+    font-size: 50px;
+}
+.product_ps{
+    font-size:30px;
+}
+ul{
+    padding:0px;
+}
+.myBtn{
+    width: 60px;
+    margin : auto;
+}
+.dollarkrw{
+    color:blue;
+    font-size:30px;
+}

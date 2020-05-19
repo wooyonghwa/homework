@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+
+    <!-- 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/mycss.css">
+    <link href="css/mobile.css" media="(max-width: 400px)" rel="stylesheet">      
+    <title>원페이지 쇼핑몰</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="iphone_img">
+            <img src="img/iphonese2.jpeg" class="img-responsive" alt="아이폰 se2 red">
+        </div>
+        <div class="contents">
+            <p>
+                <span class="product_ds">아이폰 se2 팝니다.</span>
+                <span class="product_ps">가격은 사진에있음.</span>
+            </p>
+            <p class="product_ps">
+                이 아이폰 SE2는 굉장히 싸게 나왔습니다. 다른 아이폰들은 너무 비싸지요. 이걸 사세요 ㅎㅎ
+            </p>
+            <p class="dollarkrw" id="dollarToKrw">
+                달러-원 환율 :
+            </p>
+        </div>
+        <div class="info">
+            <ul type="none">
+                <li>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">주문자 이름</span>
+                        </div>
+                        <input type="text" id="orderman_name" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                </li>
+                <li>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text" for="inputGroupSelect01">수량</label>
+                        </div>
+                        <select id="order_list" class="custom-select" id="inputGroupSelect01">
+                          <option value="0" selected>-- 수량을 선택하세요 --</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div>
+                </li>
+                <li>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">주소</span>
+                        </div>
+                        <input type="text" id="order_addr" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                </li>
+                <li>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">전화번호</span>
+                        </div>
+                        <input type="text" id="order_phone" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                </li>
+            </ul>
+        </div>
+        <div class="myBtn">
+            <button onclick="order()" type="button" class="btn btn-primary">주문하기</button>
+        </div>
+        
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- JQuery를 import 합니다 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/myJs.js"></script>
+</body>
+
+</html>

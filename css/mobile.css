@@ -1,0 +1,21 @@
+body{
+    overflow-x: hidden;
+    
+}
+.wrap{
+    border: 3px solid black;
+    padding:50px;
+    /* width:auto; */
+    width: auto;
+    margin:30px;
+}
+.product_ds{
+    font-size: 18px;
+}
+.product_ps{
+    font-size:14px;
+}
+.dollarkrw{
+    color:blue;
+    font-size:14px;
+}
