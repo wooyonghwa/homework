@@ -21,9 +21,9 @@ for music in musics:
     a_artist = music.select_one('td.info > a.artist.ellipsis') 
     #print(a_rank.text.split()[0],a_title.text.strip(),a_artist.text.strip())
     doc={
-        "rank":a_rank.text.split()[0]+"5",
-        "title":a_title.text.strip()+"5",
-        "artist":a_artist.text.strip()+"5"
+        "rank":a_rank.text.split()[0],
+        "title":a_title.text.strip(),
+        "artist":a_artist.text.strip()
     }
     db_insert(doc)
 
