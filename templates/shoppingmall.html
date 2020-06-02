@@ -9,19 +9,20 @@
     <!-- 폰트 -->
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/mycss.css">
-    <link href="css/mobile.css" media="(max-width: 400px)" rel="stylesheet">      
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mycss.css') }}">
+    <link href="{{ url_for('static', filename='css/mobile.css') }}" media="(max-width: 400px)" rel="stylesheet">      
     <title>원페이지 쇼핑몰</title>
 </head>
 
 <body>
     <div class="wrap">
         <div class="iphone_img">
-            <img src="img/iphonese2.jpeg" class="img-responsive" alt="아이폰 se2 red">
+            <img src="{{ url_for('static', filename='img/iphonese2.jpeg') }}" class="img-responsive" alt="아이폰 se2 red">
         </div>
         <div class="contents">
             <p>
@@ -80,6 +81,20 @@
             <button onclick="order()" type="button" class="btn btn-primary">주문하기</button>
         </div>
         
+        <table class="table table-sm">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">주문자명</th>
+                <th scope="col">수량</th>
+                <th scope="col">주소</th>
+                <th scope="col">전화번호</th>
+              </tr>
+            </thead>
+            <tbody  id="order_table">
+            </tbody>
+        </table>
+
     </div>
     
     <!-- Optional JavaScript -->
@@ -96,7 +111,7 @@
         crossorigin="anonymous"></script>
     <!-- JQuery를 import 합니다 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/myJs.js"></script>
+    <script src="{{ url_for('static', filename='js/myJs.js') }}"></script>
 </body>
 
 </html>
